@@ -2,9 +2,35 @@
   "expo": {
     "name": "gofinances",
     "slug": "gofinances",
+    "scheme": "gofinances",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "plugins": [
+      "expo-apple-authentication"
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#5636D3"
+    },
+    "ios": {
+      "bundleIdentifier": "br.com.gofinances",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "br.com.gofinances",
+      "permissions": [],
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#5636D3"
+      }
+    }
   }
 }
